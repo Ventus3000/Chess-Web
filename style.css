@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    border: 0cm;
+    padding: 0cm;
+}
+:root{
+    --size: 100px;
+    --gridSize: 1fr;
+    --picesSize: 100px;
+    --circlesSize: 100px;
+}
+body{
+    background-color: #191654;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.squares{
+    display: grid;
+    grid-template-columns: repeat( 8,var(--gridSize));
+    grid-template-rows: repeat( 8, var(--gridSize)); 
+    position: absolute;
+}
+.canvas{
+    height: var(--size);
+    width: var(--size);
+}
+.square{
+    font-size: 70px;
+    text-align: center;
+}
+.square:hover{
+    background-color: #1a65cda8;
+}
+.piece{
+    height: var(--picesSize);
+    width: var(--picesSize);
+    background-size: contain;
+    background-position: center;
+    cursor: grab;
+}
+.targeted{
+    background-color: #15945fc7;
+}
+.wp{
+    background-image: url("pieces/wp.png");
+}
+.bp{
+    background-image: url("pieces/bp.png");
+}
+.wr{
+    background-image: url("pieces/wr.png");
+}
+.br{
+    background-image: url("pieces/br.png");
+}
+.wb{
+    background-image: url("pieces/wb.png");
+}
+.bb{
+    background-image: url("pieces/bb.png");
+}
+.wn{
+    background-image: url("pieces/wn.png");
+}
+.bn{
+    background-image: url("pieces/bn.png");
+}
+.wk{
+    background-image: url("pieces/wk.png");
+}
+.bk{
+    background-image: url("pieces/bk.png");
+}
+.wq{
+    background-image: url("pieces/wq.png");
+}
+.bq{
+    background-image: url("pieces/bq.png");
+}
